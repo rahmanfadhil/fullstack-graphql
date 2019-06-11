@@ -1,0 +1,34 @@
+{
+  "name": "fullstack-graphql",
+  "version": "1.0.0",
+  "description": "Fullstack React.js & GraphQL boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "build": "NODE_ENV=production webpack",
+    "dev": "nodemon server"
+  },
+  "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (https://rahmanfadhil.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.6.2",
+    "express": "^4.17.1",
+    "graphql": "^14.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.33.0",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.1",
+    "webpack-cli": "^3.3.4"
+  }
+}
