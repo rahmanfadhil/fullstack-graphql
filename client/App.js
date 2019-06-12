@@ -1,12 +1,21 @@
 import React from "react";
+import { BrowserRouter, HashRouter, Route, Link } from "react-router-dom";
+
+import Counter from "./pages/Counter";
+import About from "./pages/About";
 
 export default function App() {
-  const [counter, setCounter] = React.useState(0);
+  const Router =
+    process.env.NODE_ENV === "production" ? BrowserRouter : HashRouter;
 
   return (
-    <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={() => setCounter(counter + 1)}>Increase</button>
-    </div>
+    <Router>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Route exact path="/" component={Counter} />
+        <Route path="/about" component={About} />
+      </div>
+    </Router>
   );
 }

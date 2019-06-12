@@ -8,6 +8,7 @@ Minimalist boilerplate with React, GraphQL, Express, and Webpack
 - Babel 7
 - Express
 - React & React DOM
+- React Router DOM
 - Apollo Server
 
 ## How to use
